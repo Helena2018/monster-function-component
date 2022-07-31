@@ -15,10 +15,13 @@ class App extends Component {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(user =>
-        this.setState(() => {
+        this.setState(
+          () => {
           return {monsters: user}
-        }, 
-        ()=>{console.log(this.state)}) 
+          }, 
+          ()=> {
+            console.log(this.state)
+          }) 
         )
   }
 
