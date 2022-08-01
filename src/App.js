@@ -36,7 +36,11 @@ class App extends Component {
           console.log(event.target.value)
 
           const filteredMonsters = this.state.monsters.filter((monster) => {
-            return monster.name.include(event.target.value);
+            return monster.name.includes(event.target.value);
+          })
+
+          this.setState(() => {
+            return { monster: filteredMonsters}
           })
         }} 
       />
