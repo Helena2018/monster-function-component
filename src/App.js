@@ -28,12 +28,27 @@ class App extends Component {
   render() {
     return (
     <div className="App">
+      <input 
+        className='search-box' 
+        type='search' 
+        placeholder='Search Monster' 
+        onChange={(event) => {
+          console.log(event.target.value)
+
+          const filteredMonsters = this.state.monsters.filter((monster) => {
+            return monster.name.include(event.target.value);
+          })
+        }} 
+      />
       {this.state.monsters.map((monster) => {
-        return <div key={monster.id}>
+        return (
+          <div key={monster.id}>
           <h1>{monster.name}</h1>
         </div>
+        );
       })}
-    </div>);
+    </div>
+    );
   }
 }
 
