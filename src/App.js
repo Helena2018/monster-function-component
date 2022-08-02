@@ -33,7 +33,7 @@ class App extends Component {
         type='search' 
         placeholder='Search Monster' 
         onChange={(event) => {
-          console.log(event.target.value)
+          console.log({startingArray: this.state.monsters})
 
           const searchString = event.target.value.toLocaleLowerCase();
           const filteredMonsters = this.state.monsters.filter((monster) => {
@@ -42,6 +42,9 @@ class App extends Component {
 
           this.setState(() => {
             return { monsters: filteredMonsters}
+          }, 
+          () => {
+            console.log({endingArray: this.state.monsters})
           })
         }} 
       />
