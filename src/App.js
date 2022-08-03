@@ -36,8 +36,6 @@ class App extends Component {
         placeholder='Search Monster' 
         onChange={(event) => {
           const searchField = event.target.value.toLocaleLowerCase();
-
-
           this.setState(() => {
             return { searchField }
           })
