@@ -9,7 +9,7 @@ class CardList extends Component {
           <h1 key={monster.id}>{monster.name}</h1>
         ))}
       </div>
-    )
+    );
   }
 }
 
