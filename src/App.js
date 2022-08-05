@@ -48,7 +48,7 @@ class App extends Component {
           placeholder='Search Monster' 
           onChange={ onSearchChange } 
       />
-      <CardList monster={ filteredMonsters}/>
+      <CardList monsters={filteredMonsters}/>
     </div>
     );
   }
