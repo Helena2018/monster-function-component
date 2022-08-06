@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,3 +13,11 @@ body {
   );
   text-align: center;
 }
+
+.app-title {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 75px;
+  color: #F4E2D8;
+  font-family: 'Indie Flower', sans-serif;
+  }
