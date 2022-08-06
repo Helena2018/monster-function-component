@@ -9,7 +9,7 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  background-color: #FBD3E9;
+  background-color: #F4E2D8;
   border: 1 solid gray;
   cursor: pointer;
   border-radius: 5px;
