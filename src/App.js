@@ -29,8 +29,6 @@ const App = () => {
     setSearchField(searchFieldString);
   };  
 
-
-
   return (
     <div className="App">
         <h1 className='app-title'>Monster Robot</h1>
