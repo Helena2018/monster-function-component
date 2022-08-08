@@ -1,7 +1,7 @@
 import './card.style.css';
 
 const Card = ({ monster }) => {
-    const { id, name, email } = this.props.monster;
+    const { id, name, email } = monster;
 
     return (
       <div className='card-container' key={id}>
